@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script>
+            function echo(){
+                secret = document.getElementById('secret').value
+                document.getElementById('echo_secret').innerHTML = "Your secret is: " + secret
+            }
+        </script>
+        <style>
+
+        body {
+        	background-image: linear-gradient(to top, #ade399, hsl(84, 24%, 96%));
+    		background-size: cover;
+    		margin-bottom: 0px!important;
+        }
+
+        div {
+            font-family: 'Courier', sans-serif;
+  			font-weight: normal;
+  			color: white;
+            width: 50%;
+            margin: 0 auto;
+            position: relative;
+            top: 30%;
+            left: 15%;
+            transform: translateY(-50%);
+        }
+
+        .logo{
+            width: 15%;
+            size: 10px;
+            position: right;
+        }
+        </style>
+    </head>
+
+    <body>
+               <div class="inner">
+                    <img src="./logo-white.png" class="logo"></img><P>
+                    <h1>Right Back at Ya!</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    Tell me a secret: <input type="text" id="secret"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" onclick="echo()" value="Echo"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label id="echo_secret"></label>
+                                </td>
+                            </tr>
+                        </table>                        
+        
+              </div>
+    </body>
+
+</html>
