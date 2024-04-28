@@ -5,6 +5,11 @@
                 secret = document.getElementById('secret').value
                 document.getElementById('echo_secret').innerHTML = "Your secret is: " + secret
             }
+
+            function wipe(){
+                document.getElementById('echo_secret').innerHTML = ""
+                document.getElementById('secret').value = ""
+            }
         </script>
         <style>
 
@@ -51,6 +56,9 @@
                             <tr>
                                 <td>
                                     <input type="button" onclick="echo()" value="Echo"/>
+                                </td>
+                                <td>
+                                    <input type="button" onclick="wipe()" value="Clear"/>
                                 </td>
                             </tr>
                             <tr>
